@@ -1,7 +1,7 @@
 package mx.edu.utng.json;
 
 /**
- * Created by diego on 16/04/2016.
+ * Clase que hara las casillas en X y Y
  */
 public class Casilla {
     public int x,y,ancho;
@@ -13,6 +13,12 @@ public class Casilla {
         this.ancho=ancho;
     }
 
+    /**
+     * Método para acomodar las casillas
+     * @param xx
+     * @param yy
+     * @return
+     */
     public boolean dentro(int xx,int yy) {
         if (xx>=this.x && xx<=this.x+ancho && yy>=this.y && yy<=this.y+ancho)
             return true;

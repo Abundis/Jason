@@ -4,6 +4,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 
+/**
+ * La clase bloqueo tendrá la finalidad de no permitir que el usuario
+ * ingrese a algún quiz si no cumple con la aprobación del anterior
+ */
+
 public class BloqueQuizCuatro {
 
     SharedPreferences pref;

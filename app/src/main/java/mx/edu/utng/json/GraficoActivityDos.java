@@ -27,7 +27,7 @@ public class GraficoActivityDos extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_google);
+        setContentView(R.layout.activity_grafica);
         pieChart = (PieChart) findViewById(R.id.pieChart);
         table_layout = (TableLayout) findViewById(R.id.tableLayout1);
         sqlite = new GraficaHelperDos(this);
@@ -106,7 +106,7 @@ public class GraficoActivityDos extends Activity {
         col1.setTypeface(null, Typeface.BOLD);
         col1.setTextSize(12);
         col1.setPadding(6, 10, 6, 10);
-        col1.setText("SIGLA");
+        col1.setText(R.string.sigla);
         //col 2
         TextView col2 = new TextView(this);
         col2.setBackgroundResource(R.drawable.tv_pg);
@@ -114,7 +114,7 @@ public class GraficoActivityDos extends Activity {
         col2.setTypeface(null, Typeface.BOLD);
         col2.setTextSize(12);
         col2.setPadding(6, 10, 6, 10);
-        col2.setText("LECCIÓN");
+        col2.setText(R.string.leccion);
         //col 3
         TextView col3 = new TextView(this);
         col3.setBackgroundResource(R.drawable.tv_pg);
@@ -122,7 +122,7 @@ public class GraficoActivityDos extends Activity {
         col3.setTypeface(null, Typeface.BOLD);
         col3.setTextSize(12);
         col3.setPadding(6, 10, 6, 10);
-        col3.setText("TOTAL");
+        col3.setText(R.string.total);
         //añade columnas
         rowHead.addView(col1, tableRowParams);
         rowHead.addView(col2, tableRowParams);

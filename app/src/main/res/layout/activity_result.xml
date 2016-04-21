@@ -14,7 +14,7 @@
         android:orientation="vertical" >
 
         <RatingBar
-            android:id="@+id/ratingBar1"
+            android:id="@+id/rtB_resultado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:numStars="3"
@@ -22,11 +22,11 @@
             android:rating="0.0"/>
 
         <TextView
-            android:id="@+id/textResult"
+            android:id="@+id/txv_result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.08"
-            android:text="Large Text"
+            android:text=""
             android:textAppearance="?android:attr/textAppearanceLarge" />
     </LinearLayout>
 

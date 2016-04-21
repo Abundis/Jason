@@ -31,7 +31,7 @@
     </string>
 
     <string name="pref_title_display_name">Mostrar Nombre</string>
-    <string name="pref_default_display_name">Marco Abundis</string>
+    <string name="pref_default_display_name">Edmond Dantes</string>
 
     <string name="pref_title_add_friends_to_messages">Agregar amigos</string>
     <string-array name="pref_example_list_titles">
@@ -48,7 +48,7 @@
     <!-- Example settings for Data & Sync -->
     <string name="pref_header_data_sync">Datos &amp; Sync</string>
 
-    <string name="pref_title_sync_frequency">Frencuencia de Sincronizacion</string>
+    <string name="pref_title_sync_frequency">Frencuencia de Sincronización</string>
     <string-array name="pref_sync_frequency_titles">
         <item>15 minutos</item>
         <item>30 minutos</item>
@@ -66,12 +66,12 @@
         <item>-1</item>
     </string-array>
 
-    <string name="pref_title_system_sync_settings">Ajustes para Sistema de Sincronizacion</string>
+    <string name="pref_title_system_sync_settings">Ajustes para Sistema de Sincronización</string>
 
     <!-- Example settings for Notifications -->
     <string name="pref_header_notifications">Notificación</string>
 
-    <string name="pref_title_new_message_notifications">Nuevo mensaje de notificacion</string>
+    <string name="pref_title_new_message_notifications">Nuevo mensaje de notificación</string>
 
     <string name="pref_title_ringtone">Ringtone</string>
     <string name="pref_ringtone_silent">Silencio</string>
@@ -85,7 +85,7 @@
 
     <string name="title_activity_nosotros">Nosotros</string>
     <string name="title_activity_videos">Videos</string>
-    <string name="introduccion">Json Introduccion</string>
+    <string name="introduccion">Json Introducción</string>
     <string name="destinatario">Correo</string>
     <string name="quiz">Cuestionario</string>
     <string name="asunto">Asunto</string>
@@ -102,19 +102,19 @@
     <string name="stop">Stop</string>
     <string name="pausa">Pause</string>
     <string name="play">Play</string>
-    <string name="universidad">Universidad Tecnologica del Norte de Guanajuato</string>
+    <string name="universidad">Universidad Tecnológica del Norte de Guanajuato</string>
     <string name="desarrollador">Desarrollador:</string>
-    <string name="nombre">Marco Antonio Enriquez Abundis</string>
+    <string name="nombre">Marco Antonio Enríquez Abundis</string>
 
     <string name="tema1"></string>
     <string name="bienvenido">Bienvenido</string>
-    <string name="json">¿Que es JSON?</string>
+    <string name="json">¿Qué es JSON?</string>
     <string name="nombre_usuario">Nombre de Usuario</string>
     <string name="inicio">Inicio</string>
     <string name="iniciar">Iniciar</string>
     <string name="reinicar">Reiniciar</string>
-    <string name="puntuacion">Ops no has alcanzado buena puntuacion</string>
-    <string name="excelente">Exclente</string>
+    <string name="puntuacion">Ops no has alcanzado buena puntuación</string>
+    <string name="excelente">Excelente</string>
     <string name="cu1">Cu1</string>
     <string name="sintaxis">Sintaxis</string>
     <string name="cu2">Cu2</string>
@@ -123,4 +123,56 @@
     <string name="request">Request.JSON</string>
     <string name="cu4">Cu4</string>
     <string name="again">Vuelve a intentarlo</string>
+    <string name="borrar">Borrar Todo</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="utng">Universidad Tecnológica del Norte de Guanajuato</string>
+    <string name="utng_map">Mapa del lugar</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="cuestionario_1">Cuestionario Uno</string>
+    <string name="cuestionario_2">Cuestionario Dos</string>
+    <string name="cuestionario_3">Cuestionario Tres</string>
+    <string name="cuestionario_4">Cuestionario Cuatro</string>
+    <string name="sigla">SIGLA</string>
+    <string name="leccion">LECCIÓN</string>
+    <string name="total">TOTAL</string>
+    <string name="grafica">Gráfica de Resultados</string>
+    <string name="learn">Learn JSON</string>
+    <string name="body">Se realizo con éxito el curso\nFelicidades!!</string>
+    <string name="detalle">"Detalles del Tema: "</string>
+
+    <string name="tema_1">Un formato de intercambio de datos es un formato de texto que se utiliza
+        para el intercambio de datos entre plataformas.Otro formato de intercambio de datos que ya
+        han oído hablar de es XML. El mundo necesita formatos de intercambio de datos, como XML y
+        JSON, para el intercambio de datos entre sistemas muy diferentes. Imagine por un momento un
+        mundo compuesto por cientos de islas pequeñas, aisladas entre un vasto océano. Cada isla
+        tiene su propio idioma y las costumbres únicas. Las islas tienen todos los comerciantes
+        marineros que viajan largas distancias entre las islas. el comercio exterior es una parte
+        integral de todas las economías de las islas y contribuye a un alto nivel de vida de los
+        isleños. Si no fuera por las gaviotas de soporte altamente capacitadas, esto no sería
+        posible.</string>
+
+    <string name="tema_2">La sintaxis de JSON realmente no es nada más que la mezcla de literales de
+        objeto y matrices para almacenar datos. ¿JSON representa solamente datos? No incluye el
+        concepto de variables, asignaciones o igualdades.\nSi transmitimos esta información a través
+        de HTTP a un navegador, será bastante\n rápido, dado el reducido número de caracteres.\n
+        Suponga que recupera esta información utilizando y la almacena en una\n variable llamadas
+        JSON. Ahora, dispondrá de una cadena de información, no de un objeto. Para transformarla en
+        un objeto, simplemente utilizaremos la función eval():</string>
+
+    <string name="tema_3">¿Podíamos decodíficar JSON utilizando la función eval ()?. Hay un problema
+        inherente en la utilización de eval(), que evalúa cualquier código JavaScript que se pasa a
+        la función y esto es un gran riesgo de seguridad. MOOTOOLS: Json\n Json nos facilita la
+        tarea de pasar de un string Json a un Objeto Javascript y viceversa.\n Nota: Todo lo
+        referente a JSON respecto a la versión anterior (1.11) ha cambiado\n bastante, haciendose
+        completamente incompatibles. Por ejemplo, antes se escribía\n Json. Ahora es JSON.\n
+        JSON.encode(objeto)\n¿ Nos permite pasar un Objeto Javascript a un simple String. JSON.decode
+        (string, secure)\n Nos permite pasar de un String Json a un Objeto Javascript.</string>
+
+    <string name="tema_4">Nos permite enviar y recibir objetos JSON mediante AJAX de manera muy
+        simple. Hereda todos los métodos y propiedades de la clase Request (para trabajo con AJAX).
+        Supongamos que tenemos una base de datos de productos y queremos, mediante\n ASP y AJAX,
+        mostrar todos esos productos. Con Request.JSON enviaríamos la\n petición a ASP, éste buscaría
+        Javascript</string>
+
+
 </resources>

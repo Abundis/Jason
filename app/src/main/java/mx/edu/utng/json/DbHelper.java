@@ -8,6 +8,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Base de datos del cuestionario
+ */
+
 public class DbHelper extends SQLiteOpenHelper {
 	private static final int DATABASE_VERSION = 1;
 	// Database Name
@@ -57,6 +61,9 @@ public class DbHelper extends SQLiteOpenHelper {
 		//db.close();
 	}
 
+	/**
+	 * Método que agrega preguntas al layout y dónde se verifica con la correcta que es la última
+	 */
 	private void addQuestions()
 	{
 		Question q1=new Question("¿Qué es JSON?","Es un formato ligero de intercambio de datos",
@@ -129,7 +136,9 @@ public class DbHelper extends SQLiteOpenHelper {
 	private static final String KEY_OPTAD= "opta"; //option a
 	private static final String KEY_OPTBD= "optb"; //option b
 	private static final String KEY_OPTCD= "optc"; //option c
-
+	/**
+	 * Método que agrega preguntas al layout y dónde se verifica con la correcta que es la última
+	 */
 	private void addQuestionsDos()
 	{
 		Question q1=new Question("¿Cual es la sintaxis?","La mezcla de literales de objeto y matrices",
@@ -144,7 +153,7 @@ public class DbHelper extends SQLiteOpenHelper {
 				"Nombre, Apellido",
 				"Ninguna de las dos", "firstName, lastName");
 		this.addQuestiondos(q2);
-		Question q3=new Question("¿Que funcion transforma en objeto la cadena de informacion?","eval();",
+		Question q3=new Question("¿Que funcion transforma en objeto la cadena de información?","eval();",
 				"toObject();","ParseObject();","eval();");
 		this.addQuestiondos(q3);
 	}
@@ -193,6 +202,10 @@ private static final String TABLE_QUESTT = "questt";
 	private static final String KEY_OPTAT= "opta"; //option a
 	private static final String KEY_OPTBT= "optb"; //option b
 	private static final String KEY_OPTCT= "optc"; //option c
+
+	/**
+	 * Método que agrega preguntas al layout y dónde se verifica con la correcta que es la última
+	 */
 	private void addQuestionsTres()
 	{
 		Question q1=new Question("¿Cual es el problema de eval();?","Evalúa cualquier código JavaScript",
@@ -202,7 +215,7 @@ private static final String TABLE_QUESTT = "questt";
 				"var str = JSON._____(objeto);", "decode", "encode",
 				"toString", "encode");
 		this.addQuestionT(q2);
-		Question q3=new Question("¿Para que sirve JSON.encode(objeto)?","Para codigiar codigo",
+		Question q3=new Question("¿Para que sirve JSON.encode(objeto)?","Para codificar codigo",
 				"Para hacer figuras","Para pasar un Objeto Javascript a un simple String","Para pasar" +
 				" un Objeto Javascript a un simple String");
 		this.addQuestionT(q3);
@@ -252,16 +265,18 @@ private static final String TABLE_QUESTT = "questt";
 	private static final String KEY_OPTAC= "opta"; //option a
 	private static final String KEY_OPTBC= "optb"; //option b
 	private static final String KEY_OPTCC= "optc"; //option c
-
+	/**
+	 * Método que agrega preguntas al layout y dónde se verifica con la correcta que es la última
+	 */
 
 	private void addQuestionsCuatro() {
-		Question q1=new Question("¿Para que sirve Request.JSON?","Para enviar y recibir objetos JSON mediante AJAX",
-				"Para hacer una peticion", "PAra mandar una respuesta", "Paraenviar y recibir objetos JSON mediante AJAX");
+		Question q1=new Question("¿Para qué sirve Request.JSON?","Para enviar y recibir objetos JSON mediante AJAX",
+				"Para hacer una peticion", "Para mandar una respuesta", "Para enviar y recibir objetos JSON mediante AJAX");
 		this.addQuestionC(q1);
-		Question q2=new Question("¿De donde se heredan los metodos y propiedades para trabajar con AJAX?",
+		Question q2=new Question("¿De dónde se heredan los metodos y propiedades para trabajar con AJAX?",
 				"De la clase Request", "Del package AJAX", "De un Jar para java", "De la clase Request");
 		this.addQuestionC(q2);
-		Question q3=new Question("Una vez que tenemos los datos en formato JSON, ¿Que sigue?","Llenar la Base de Datos",
+		Question q3=new Question("Una vez que tenemos los datos en formato JSON, ¿Qué sigue?","Llenar la Base de Datos",
 				"Mandarlo mediante AJAX","Mostrarlo con JavaScript","Mostrarlo con JavaScript");
 		this.addQuestionC(q3);
 	}

@@ -21,11 +21,11 @@ public class ResultActivityCuatro extends Activity {
 
 		session= new BloqueQuizCuatro(getApplicationContext());
 		//get rating bar object
-		RatingBar bar=(RatingBar)findViewById(R.id.ratingBar1);
+		RatingBar bar=(RatingBar)findViewById(R.id.rtB_resultado);
 		bar.setNumStars(3);
 		bar.setStepSize(0.5f);
 		//get text view
-		TextView t=(TextView)findViewById(R.id.textResult);
+		TextView t=(TextView)findViewById(R.id.txv_result);
 		//get score
 		Bundle b = getIntent().getExtras();
 		int score= b.getInt("score");

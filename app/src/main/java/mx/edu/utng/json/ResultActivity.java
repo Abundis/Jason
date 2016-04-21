@@ -7,8 +7,6 @@ import android.view.Menu;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import java.net.URISyntaxException;
-
 public class ResultActivity extends Activity {
 
 
@@ -23,11 +21,11 @@ public class ResultActivity extends Activity {
 
 		session= new BloqueQuizDos(getApplicationContext());
 		//Recibiendo la cantidad para llenar las estrellas
-		RatingBar bar=(RatingBar)findViewById(R.id.ratingBar1);
+		RatingBar bar=(RatingBar)findViewById(R.id.rtB_resultado);
 		bar.setNumStars(3);
 		bar.setStepSize(0.5f);
 		//Recibiendo el texto
-		TextView t=(TextView)findViewById(R.id.textResult);
+		TextView t=(TextView)findViewById(R.id.txv_result);
 		//Recibiendo el contenido
 		Bundle b = getIntent().getExtras();
 		int score= b.getInt("score");

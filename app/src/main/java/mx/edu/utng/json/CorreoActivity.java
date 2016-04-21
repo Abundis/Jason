@@ -32,9 +32,8 @@ public class CorreoActivity extends Activity {
                 itSend.setType("plain/text");
 
                 itSend.putExtra(android.content.Intent.EXTRA_EMAIL, etEmail.getText());
-                itSend.putExtra(android.content.Intent.EXTRA_SUBJECT, "Learn JSON");
-                itSend.putExtra(android.content.Intent.EXTRA_TEXT, "Se realizo con exito el curso\nFelicidades!!");
-
+                itSend.putExtra(android.content.Intent.EXTRA_SUBJECT, getString(R.string.learn));
+                itSend.putExtra(android.content.Intent.EXTRA_TEXT, getString(R.string.body));
                 startActivity(itSend);
 
             }

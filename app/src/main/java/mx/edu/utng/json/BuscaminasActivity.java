@@ -13,6 +13,10 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+/**
+ * Clase en la cuál los metodos sirven para la utilización
+ * del juego de manera sencilla
+ */
 
 public class BuscaminasActivity extends ActionBarActivity implements View.OnTouchListener {
     private Tablero fondo;
@@ -42,6 +46,10 @@ public class BuscaminasActivity extends ActionBarActivity implements View.OnTouc
         getSupportActionBar().hide();
     }
 
+    /**
+     * Reinicia el juego con casillas nuevas
+     * @param v es la vista de las casillas a reinicar
+     */
     public void reiniciar(View v) {
         casillas = new Casilla[8][8];
         for (int f = 0; f < 8; f++) {
@@ -56,6 +64,13 @@ public class BuscaminasActivity extends ActionBarActivity implements View.OnTouc
         fondo.invalidate();
     }
 
+    /**
+     * Con cada click en la casilla se irán abriendo y si
+     * selecciona donde esta la bomba está hará un "Booom"
+     * @param v
+     * @param event
+     * @return
+     */
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         if (activo)
@@ -88,6 +103,10 @@ public class BuscaminasActivity extends ActionBarActivity implements View.OnTouc
             super(context);
         }
 
+        /**
+         * Este metodo nos ayuda a dibujar las casillas
+         * @param canvas
+         */
         protected void onDraw(Canvas canvas) {
             canvas.drawRGB(0, 0, 0);
             int ancho = 0;
@@ -143,6 +162,9 @@ public class BuscaminasActivity extends ActionBarActivity implements View.OnTouc
         }
     }
 
+    /**
+     * Aquí con se ubicará la bomba de manera random
+     */
     private void disponerBombas() {
         int cantidad = 8;
         do {
@@ -155,6 +177,10 @@ public class BuscaminasActivity extends ActionBarActivity implements View.OnTouc
         } while (cantidad != 0);
     }
 
+    /**
+     * Método para saber que ganó el juego
+     * @return
+     */
     private boolean gano() {
         int cant = 0;
         for (int f = 0; f < 8; f++)
@@ -167,6 +193,9 @@ public class BuscaminasActivity extends ActionBarActivity implements View.OnTouc
             return false;
     }
 
+    /**
+     * Cuenta las bombas que se ponen con un metodo for
+     */
     private void contarBombasPerimetro() {
         for (int f = 0; f < 8; f++) {
             for (int c = 0; c < 8; c++) {
@@ -178,6 +207,12 @@ public class BuscaminasActivity extends ActionBarActivity implements View.OnTouc
         }
     }
 
+    /**
+     * Nos muestra las coordenadas de casilla y su contenido
+     * @param fila
+     * @param columna
+     * @return
+     */
     int contarCoordenada(int fila, int columna) {
         int total = 0;
         if (fila - 1 >= 0 && columna - 1 >= 0) {
@@ -217,6 +252,11 @@ public class BuscaminasActivity extends ActionBarActivity implements View.OnTouc
         return total;
     }
 
+    /**
+     * Hace un recorrido por las casillas
+     * @param fil
+     * @param col
+     */
     private void recorrer(int fil, int col) {
         if (fil >= 0 && fil < 8 && col >= 0 && col < 8) {
             if (casillas[fil][col].contenido == 0) {

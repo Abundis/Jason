@@ -52,17 +52,17 @@ public class QuizActivityTres extends AppCompatActivity {
 		DbHelper db=new DbHelper(this);
 		quesListTres=db.getAllQuestionsTres();
 		currentQ=quesListTres.get(qid);
-		txtQuestion=(TextView)findViewById(R.id.textView1);
-		rda=(RadioButton)findViewById(R.id.radio0);
-		rdb=(RadioButton)findViewById(R.id.radio1);
-		rdc=(RadioButton)findViewById(R.id.radio2);
-		butNext=(Button)findViewById(R.id.button1);
+		txtQuestion=(TextView)findViewById(R.id.txv_pregunta);
+		rda=(RadioButton)findViewById(R.id.rd_pregunta_1);
+		rdb=(RadioButton)findViewById(R.id.rd_pregunta_2);
+		rdc=(RadioButton)findViewById(R.id.rd_pregunta_3);
+		butNext=(Button)findViewById(R.id.btn_sig);
 		setQuestionView();
 		butNext.setOnClickListener(new View.OnClickListener() {		
 			@Override
 			public void onClick(View v) {
 
-				RadioGroup grp=(RadioGroup)findViewById(R.id.radioGroup1);
+				RadioGroup grp=(RadioGroup)findViewById(R.id.rdg_quiz);
 				RadioButton answer=(RadioButton)findViewById(grp.getCheckedRadioButtonId());
 				grp.clearCheck();
 				Log.d("yourans", currentQ.getANSWER()+" "+answer.getText());

@@ -8,6 +8,7 @@ import android.widget.Button;
 
 /**
  * Created by MSI on 15/02/2016.
+ * Nos ayudara a la reproduccion de audios con MediaPlayer
  */
 public class AudiosActivity extends ActionBarActivity {
     boolean playing = false;

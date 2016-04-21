@@ -9,8 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="mx.edu.utng.json.NosotrosActivity"
-    tools:showIn="@layout/activity_nosotros">
+    tools:context="mx.edu.utng.json.NosotrosActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -58,9 +57,39 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/img_json"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
         android:foregroundGravity="bottom"
-        android:src="@drawable/ic_json" />
+        android:src="@drawable/ic_json"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/txv_titulo"
+        android:layout_centerHorizontal="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tomado del libro"
+        android:id="@+id/txv_libro"
+        android:textSize="30dp"
+        android:layout_above="@+id/txv_titulo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Curso librerias Web 2.0."
+        android:id="@+id/txv_titulo"
+        android:textSize="27dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btn_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/utng_map"
+        android:onClick="btnMap"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="65dp" />
 </RelativeLayout>

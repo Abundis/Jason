@@ -1,7 +1,7 @@
 package mx.edu.utng.json;
 
 import android.app.Activity;
-import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,11 +26,11 @@ public class SignUPActivity extends Activity {
         loginDataBaseAdapter=loginDataBaseAdapter.open();
 
         // Get Refferences of Views
-        editTextUserName=(EditText)findViewById(R.id.editTextUserName);
-        editTextPassword=(EditText)findViewById(R.id.editTextPassword);
-        editTextConfirmPassword=(EditText)findViewById(R.id.editTextConfirmPassword);
+        editTextUserName=(EditText)findViewById(R.id.edt_user_name);
+        editTextPassword=(EditText)findViewById(R.id.edt_password);
+        editTextConfirmPassword=(EditText)findViewById(R.id.edt_confirm_password);
 
-        btnCreateAccount=(Button)findViewById(R.id.buttonCreateAccount);
+        btnCreateAccount=(Button)findViewById(R.id.btn_crear_cuenta);
         btnCreateAccount.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
@@ -57,6 +57,7 @@ public class SignUPActivity extends Activity {
                     // Save the Data in Database
                     loginDataBaseAdapter.insertEntry(userName, password);
                     Toast.makeText(getApplicationContext(), "Cuenta creada correctamente ", Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(SignUPActivity.this, RegistrarActivity.class));
                 }
             }
         });

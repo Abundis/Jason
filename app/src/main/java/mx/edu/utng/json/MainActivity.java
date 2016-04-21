@@ -93,8 +93,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_send) {
             startActivity(new Intent(this, CorreoActivity.class));
         }
-          else if (id == R.id.nav_juego) {
-            startActivity(new Intent(this, BuscaminasActivity.class));
+          else if (id == R.id.nav_calculadora) {
+            startActivity(new Intent(this, CalculadoraActivity.class));
+
         }else if (id == R.id.nav_resultado) {
             startActivity(new Intent(this, GraficoActivityDos.class));
         }

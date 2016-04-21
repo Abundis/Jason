@@ -26,6 +26,10 @@
             android:id="@+id/nav_resultado"
             android:icon="@drawable/icon_palomita2"
             android:title="Resultado" />
+        <item
+            android:id="@+id/nav_calculadora"
+            android:icon="@drawable/icon_palomita2"
+            android:title="Calculadora" />
 
     </group>
 
@@ -36,13 +40,9 @@
                 android:icon="@drawable/ic_menu_share"
                 android:title="Nosotros" />
             <item
-                android:id="@+id/nav_juego"
-                android:icon="@drawable/icon_palomita2"
-                android:title="Juego Buscaminas" />
-            <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Comentarios" />
+                android:title="Correo" />
         </menu>
     </item>
 

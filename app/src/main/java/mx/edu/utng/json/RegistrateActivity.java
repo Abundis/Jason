@@ -50,10 +50,10 @@ public class RegistrateActivity extends Activity {
         dialog.setTitle("Login");
 
         // get the Refferences of views
-        final  EditText editTextUserName=(EditText)dialog.findViewById(R.id.editTextUserNameToLogin);
-        final  EditText editTextPassword=(EditText)dialog.findViewById(R.id.editTextPasswordToLogin);
+        final  EditText editTextUserName=(EditText)dialog.findViewById(R.id.edt_user_name_login);
+        final  EditText editTextPassword=(EditText)dialog.findViewById(R.id.edt_password_login);
 
-        Button btnSignIn=(Button)dialog.findViewById(R.id.buttonSignIn);
+        Button btnSignIn=(Button)dialog.findViewById(R.id.btn_sign_in);
 
         // Set On ClickListener
         btnSignIn.setOnClickListener(new View.OnClickListener() {

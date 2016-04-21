@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+/**
+ * Es la parte que se visualiza en el layout
+ */
 
 public class CuestionarioActivity extends Activity {
     @Override
@@ -17,7 +20,7 @@ public class CuestionarioActivity extends Activity {
         Button btnQuiz1=(Button)findViewById(R.id.btn_tema1);
         Button btnQuiz2=(Button)findViewById(R.id.btn_tema2);
         Button btnQuiz3=(Button)findViewById(R.id.btn_tema3);
-        Button btnQuiz4=(Button)findViewById(R.id.tema4);
+        Button btnQuiz4=(Button)findViewById(R.id.btn_tema4);
         btnQuiz1.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View v) {
