@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txv_audios"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/introduccion"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_start"
+        android:text="@string/play"
+        android:layout_below="@+id/txv_audios"/>
+    <Button
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_pause"
+        android:text="@string/pausa"
+        android:layout_below="@+id/btn_start"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_stop"
+        android:text="@string/stop"
+        android:layout_below="@+id/btn_pause"/>
+    </LinearLayout>
+</LinearLayout>

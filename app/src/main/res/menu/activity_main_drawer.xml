@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_temas"
+            android:icon="@drawable/icon_palomita2"
+            android:title="Login"></item>
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/icon_palomita2"
+            android:title="Temas" />
+        <item
+            android:id="@+id/nav_videos"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Videos" />
+        <item
+            android:id="@+id/nav_audio"
+            android:icon="@drawable/icon_palomita2"
+            android:title="Audios" />
+        <item
+        android:id="@+id/nav_cuestionario"
+        android:icon="@drawable/icon_palomita2"
+        android:title="Cuestionarios" />
+        <item
+            android:id="@+id/nav_resultado"
+            android:icon="@drawable/icon_palomita2"
+            android:title="Resultado" />
+
+    </group>
+
+    <item android:title="Contactanos">
+        <menu>
+            <item
+                android:id="@+id/nav_nosotros"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Nosotros" />
+            <item
+                android:id="@+id/nav_juego"
+                android:icon="@drawable/icon_palomita2"
+                android:title="Juego Buscaminas" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Comentarios" />
+        </menu>
+    </item>
+
+</menu>

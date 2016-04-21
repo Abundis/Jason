@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edt_text_user_name"
+        android:hint="@string/usuario_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edt_text_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/contraseña"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edt_text_confirm_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirmar_pass"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_create_account"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crear_cuenta"
+        android:layout_marginBottom="60dp" />
+</LinearLayout>

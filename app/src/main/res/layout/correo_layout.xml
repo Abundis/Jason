@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:id="@+id/LinearLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView android:text="@string/destinatario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_ForEmail"></TextView>
+
+        <EditText android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="170dip"
+            android:id="@+id/edt_Email">
+        </EditText>
+
+    </LinearLayout>
+<!--
+    <LinearLayout android:id="@+id/LinearLayout03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView android:text="@string/asunto"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_ForSubject"></TextView>
+
+        <EditText android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:width="170dip"
+            android:id="@+id/edt_Subject">
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/LinearLayout04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView android:text="@string/mensaje"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_ForBody"></TextView>
+
+        <EditText android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:width="300dip"
+            android:id="@+id/edt_Body">
+        </EditText>
+
+    </LinearLayout>
+-->
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_Send"
+        android:text="@string/enviar"
+        android:width="150dip"
+        android:layout_gravity="center_horizontal">
+    </Button>
+</LinearLayout>
